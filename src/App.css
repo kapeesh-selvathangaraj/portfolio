@@ -1,38 +1,37 @@
-.App {
-  text-align: center;
+/* App.css */
+
+/* Custom Cursor Styles */
+body {
+  cursor: none; /* Hide default cursor */
 }
 
-.App-logo {
-  height: 40vmin;
+.custom-cursor {
+  width: 16px;
+  height: 16px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  position: fixed;
   pointer-events: none;
+  transition: transform 0.1s ease;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button, a, .interactive {
+  cursor: url('https://your-custom-cursor-url.com/interactive-cursor.png'), auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Styling for buttons and links */
+button {
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 10px 20px;
 }
 
-.App-link {
-  color: #61dafb;
+a {
+  text-decoration: none;
+  color: #fff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Additional styling for interactivity */
+.interactive:hover {
+  cursor: url('https://your-custom-cursor-url.com/hover-cursor.png'), auto;
 }
